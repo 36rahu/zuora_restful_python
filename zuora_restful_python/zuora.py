@@ -394,4 +394,6 @@ class Zuora(object):
         response = self._post('/subscriptions/', payload)
         return response
     
-        
+    def create_customer_account(self,payload):
+        response = self._post('/accounts/',payload)
+        return response    
